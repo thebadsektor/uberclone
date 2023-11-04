@@ -32,3 +32,6 @@ const nextConfig = {
     }
 }
 ```
+
+https://www.youtube.com/watch?v=7zLyVzItZlQ
+Stopped at `33:33 `
