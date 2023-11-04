@@ -8,5 +8,25 @@
   - Would you like to use App Router? (recommended) **Yes**
   - Would you like to customize the default import alias (@/*)? **No**
 
-- Open folder ```cd tiktok-clone```
-- Preview ```npm run dev``` in ``` http://localhost:3000```
+- Open folder `cd tiktok-clone`
+- Preview `npm run dev` in `http://localhost:3000`
+
+#### Install Packages
+```
+npm i appwrite debounce @types/debounce image-js moment react-advanced-cropper react-icons 
+zustand canvas raw-loader
+```
+
+- Modify `nextConfig` in `next.config.js` to add a rule to handle the canvas.node binary module:
+```
+const nextConfig = {
+    webpack: (config, {isServer}) => {
+        // Add a rule to handle the canvas.node binary module
+        config.module.rules.push({test: /\.node$/, use: 'raw-loader'})
+
+        // Exclude canvas from being process by Next.js in the browser
+        if(!isServer) config.externals.push('canvas');
+        return config;
+    }
+}
+```
