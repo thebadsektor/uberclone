@@ -16,6 +16,8 @@
 npm i appwrite debounce @types/debounce image-js moment react-advanced-cropper react-icons 
 zustand canvas raw-loader
 ```
+MacOS Canvas installation troubleshooting:
+```https://stackoverflow.com/questions/38173326/no-eslint-configuration-found-error```
 
 - Modify `nextConfig` in `next.config.js` to add a rule to handle the canvas.node binary module:
 ```
