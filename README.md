@@ -8,5 +8,5 @@
   - Would you like to use App Router? (recommended) **Yes**
   - Would you like to customize the default import alias (@/*)? **No**
 
-Open folder ```cd tiktok-clone```
-Preview ```npm run dev``` in ``` http://localhost:3000```
+- Open folder ```cd tiktok-clone```
+- Preview ```npm run dev``` in ``` http://localhost:3000```
